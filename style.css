@@ -269,13 +269,14 @@ footer .footer__nav .footer-list {
 @media (max-width: 767px) {
   .header__menu {
     position: fixed;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     top: -100%;
     left: 0;
     background: rgb(29, 91, 29);
     z-index: 2;
     transition: all 0.3s ease 0s;
+    overflow: hidden;
   }
   .header__menu .list-nav {
     display: flex;
