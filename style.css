@@ -2,9 +2,15 @@
   margin: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   transition: all ease 1s;
   background-color: aqua;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -27,9 +33,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 1350px) {
+@media (max-width: 1920px) {
   .header__navbar {
-    width: 100%;
+    max-width: 1300;
   }
 }
 .header__navbar .navbar-logo {
@@ -58,6 +64,12 @@ body {
   background: rgb(153, 153, 29);
   width: 88px;
   margin-left: 50px;
+}
+
+.content {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
 }
 
 .block__row {
@@ -150,8 +162,6 @@ body {
 }
 
 footer {
-  position: absolute;
-  bottom: -1;
   height: 50px;
   background: rgb(29, 91, 29);
   width: 100%;

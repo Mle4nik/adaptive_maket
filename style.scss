@@ -3,16 +3,20 @@
     // min-width: 30px;
 }
 
-html {
+html, body {
     // min-width: 500px;
     // overflow: hidden;
+    height: 100%;
 }
 
 body {
     transition: all ease 1s;
     // overflow: hidden;
     background-color: aqua;
-    // height: 0;
+    // height: 100%;
+    margin: 0;
+    padding: 0;
+    // position: relative;
 }
 
 .header {
@@ -41,9 +45,21 @@ body {
         // padding-top: 7px;
         // padding: 7px 30px 0px 30px;
 
-        @media (max-width: 1350px) {
-            width: 100%
+        // @media (min-width: 1921px) {
+        //     // width: 100%;
+        //     min-width: 1301px;
+            
+        //     // margin: 0;
+        // }
+
+        @media (max-width: 1920px) {
+            max-width: 1300;
         }
+            
+        
+        // @media (max-width: 1350px) {
+        //     width: 100%
+        // }
 
         .navbar-logo {
             padding: 28px;
@@ -161,7 +177,12 @@ body {
     }
 }
 
-// .content {
+.content {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    // margin: 0 auto -4em;
+}
     
 //     &__block {
      
@@ -308,11 +329,21 @@ body {
 
 
 footer {
-    position: absolute;
-    bottom: -1;
+    // position: absolute;
+    // left: 0;
+    // bottom: 0;
     height: 50px;
     background: rgb(29, 91, 29);
     width: 100%;
+    // z-index: 999999;
+
+    // @media (max-width: 1000) {
+    //     bottom: 0;
+    // }
+
+    // @media (max-width: 740px) {
+    //     bottom: -1;
+    // }
 
     @media (max-width: 380px) {
         height: 70px;
